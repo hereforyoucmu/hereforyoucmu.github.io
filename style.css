@@ -8,15 +8,4 @@ h1 {
 h3 {
   color: #AFCBFF;
 }
-h1,
-h3{
-  text-align: center;
-  font-family: sans-serif;
-}
-.content {
-  text-align: justify;
-  font-family: sans-serif;
-  margin-left: 35px;
-  margin-right: 35px;
-  color: #0E1C36;
-}
+
