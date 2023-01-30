@@ -7,13 +7,372 @@
   <link rel = "stylesheet" href = "style.css">
   <link href="img/favicon.png" type="image/x-icon" rel="icon" />
 </head>
-  <body>
-    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-      <div class="w3-container w3-display-container w3-padding-16">
-        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-        <h3 class="w3-wide"><b>LOGO</b></h3>
+
+<body id="body"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20211206080131/http%3A//www.hereforyoucmu.com/"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.hereforyoucmu.com/" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20211206080131" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;">
+                    <a class="t" href="/web/20211206080131*/http://www.hereforyoucmu.com/" title="See a list of every capture for this URL">3 captures</a>
+          <div class="r" title="Timespan for captures of this URL">06 Dec 2021 - 20 Feb 2022</div>
+          </div>
+        <div class="k">
+          <a href="" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="700" height="27" border="0"></canvas>
+            </div>
+          </a>
+        </div>
       </div>
-    </nav>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap">Nov</td>
+            <td class="c" id="displayMonthEl" title="You are here: 08:01:31 Dec 06, 2021">DEC</td>
+            <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20220220043909/http://www.hereforyoucmu.com/" title="20 Feb 2022"><strong>Feb</strong></a></td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" /></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 08:01:31 Dec 06, 2021">06</td>
+            <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20220220043909/http://www.hereforyoucmu.com/" title="04:39:09 Feb 20, 2022"><img src="/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap">2020</td>
+            <td class="c" id="displayYearEl" title="You are here: 08:01:31 Dec 06, 2021">2021</td>
+            <td class="f" nowrap="nowrap">2022</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#" title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20211206080131/http://web.archive.org/screenshot/http://www.hereforyoucmu.com/"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20211206080131/http://www.hereforyoucmu.com/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20211206080131/http://www.hereforyoucmu.com/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/mega-001)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/mega-001" target="_new"><span class="wm-title">mega001</span></a></div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20211206080131/http://www.hereforyoucmu.com/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","http://www.hereforyoucmu.com/","20211206080131",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar-container">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    
+    <img alt="logo" class="img-logo" src="https://web.archive.org/web/20211206080131im_/https://storage.googleapis.com/here-for-you-static/img/logo.png"/>
+    <a class="navbar-title" href="/web/20211206080131/http://www.hereforyoucmu.com/">CMU Here For You</a>
+    <p class="navbar-text visible-lg">A student group supporting mental health on campus</p>
+    
+</div>
+<div class="navbar-collapse collapse">
+<!--    
+<form action="/search/" class="navbar-form navbar-right" role="search">
+
+<div class="form-group">
+    <input class="form-control" placeholder="Search" type="text" name="q" value="">
+</div>
+
+
+    
+    <div class="form-group">
+    <select class="form-control" name="type">
+        <option value="">Everything</option>
+        
+        <option value="blog.BlogPost"
+            >
+            Blog posts
+        </option>
+        
+        <option value="pages.Page"
+            >
+            Pages
+        </option>
+        
+    </select>
+    </div>
+    
+
+
+<input type="submit" class="btn btn-default" value="Go">
+
+</form>
+ -->
+    
+<ul class="nav navbar-nav "><li class="
+               active" id="-"><a href="/web/20211206080131/http://www.hereforyoucmu.com/">
+            About
+            
+        </a></li><li class="
+               " id="mental-health-experiences"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-experiences/">
+            Mental Health Experiences
+            
+        </a></li><li class="dropdown
+               " id="mental-health-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/" class="dropdown-toggle disabled" data-toggle="dropdown">
+            Mental Health Resources
+            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+               " id="mental-health-resources-professional-help"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/professional-help/">Professional Help</a></li><li class="
+               " id="mental-health-resources-specific-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/specific-resources/">Specific Resources</a></li><li class="
+               " id="mental-health-resources-campus-resources-academic-social-physical-health"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/campus-resources-academic-social-physical-health/">Campus Wellbeing Resources</a></li><li class="
+               " id="mental-health-resources-off-campus-resources-academic-social-physical-health"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/off-campus-resources-academic-social-physical-health/">Off-Campus Wellbeing Resources</a></li><li class="
+               " id="mental-health-resources-educational-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/educational-resources/">Educational Resources</a></li><li class="
+               " id="mental-health-resources-crisis-emergency-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/crisis-emergency-resources/">Crisis, Emergency, and Suicide Prevention</a></li></ul></li><li class="
+               " id="faq"><a href="/web/20211206080131/http://www.hereforyoucmu.com/faq/">
+            FAQ
+            
+        </a></li><li class="
+               " id="blog"><a href="/web/20211206080131/http://www.hereforyoucmu.com/blog/">
+            News + Events
+            
+        </a></li><li class="
+               " id="contact"><a href="/web/20211206080131/http://www.hereforyoucmu.com/contact/">
+            Contact
+            
+        </a></li></ul>
+
+</div>
+</div>
+</div>
+
+<div class="container">
+
+
+
+
+
+<h1>
+About
+</h1>
+
+<!--
+<ul class="breadcrumb">
+<li>Home</li>
+</ul>
+-->
+
+</div>
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-2 left">
+    
+    <div class="panel panel-default tree">
+
+<ul class="nav nav-list navlist-menu-level-0"><li class="
+     active
+     active-branch
+    " id="tree-menu--"><a href="/web/20211206080131/http://www.hereforyoucmu.com/">About</a></li><li class="
+    
+    
+    " id="tree-menu-mental-health-experiences"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-experiences/">Mental Health Experiences</a></li><li class="
+    
+    
+    " id="tree-menu-mental-health-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/">Mental Health Resources</a><ul class="nav nav-list navlist-menu-level-1"><li class="
+    
+    
+    " id="tree-menu-mental-health-resources-professional-help"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/professional-help/">Professional Help</a></li><li class="
+    
+    
+    " id="tree-menu-mental-health-resources-specific-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/specific-resources/">Specific Resources</a></li><li class="
+    
+    
+    " id="tree-menu-mental-health-resources-campus-resources-academic-social-physical-health"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/campus-resources-academic-social-physical-health/">Campus Wellbeing Resources</a></li><li class="
+    
+    
+    " id="tree-menu-mental-health-resources-off-campus-resources-academic-social-physical-health"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/off-campus-resources-academic-social-physical-health/">Off-Campus Wellbeing Resources</a></li><li class="
+    
+    
+    " id="tree-menu-mental-health-resources-educational-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/educational-resources/">Educational Resources</a></li><li class="
+    
+    
+    " id="tree-menu-mental-health-resources-crisis-emergency-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/crisis-emergency-resources/">Crisis, Emergency, and Suicide Prevention</a></li></ul></li><li class="
+    
+    
+    " id="tree-menu-faq"><a href="/web/20211206080131/http://www.hereforyoucmu.com/faq/">FAQ</a></li><li class="
+    
+    
+    " id="tree-menu-blog"><a href="/web/20211206080131/http://www.hereforyoucmu.com/blog/">News + Events</a></li><li class="
+    
+    
+    " id="tree-menu-contact"><a href="/web/20211206080131/http://www.hereforyoucmu.com/contact/">Contact</a></li></ul>
+</div>
+    
+</div>
+
+<div class="col-md-7 middle">
+    
+<!--
+This template is provided as a custom template for the homepage, for
+when it is configured as an editable page in the navigation tree. Feel
+free to modify it.
+-->
+
+
+
+
+<p style="text-align: center;"><img alt="" src="https://web.archive.org/web/20211206080131im_/https://storage.googleapis.com/here-for-you-static/uploads/logo_withtext.png?Expires=1589557828&amp;GoogleAccessId=here-for-you@steady-math-275416.iam.gserviceaccount.com&amp;Signature=TCYK44KtOiwYuL9OsAUB/uZrs9rDftdVx56z9ihkcyqM+Zv3MM+liTEKcaEZ54hh1XruZBupbmfce56hOvjOqT6BZ+bWdCiMCc7E0hSmngYqh3TQ2fXWKKtOt/jog4fmCv5KnvbZdETfYIsMIsgih67uBZHaYdEX8sjOJvBVumXN+AVI+ufgKujtAU0RKsOrLgTi8zgEDVZYlkokMRKq4gtn4nbgt+14x++Vr8IV4jZshhjnHaii+rWUYoRhPRXUUj2n89cjyT0OAFPiNUKLKphWtjDmO3wuoy+AXvmW6Rha6gsJyazbgdYNGRJkcUM1Wvupd7PK+d8AozreLR+bfg==" width="1000"/><img alt="" height="158" src="https://web.archive.org/web/20211206080131im_/https://storage.googleapis.com/here-for-you-static/uploads/.thumbnails/logo_withtext_hor.png/logo_withtext_hor-632x158.png" width="632"/></p>
+<p style="text-align: center;"><img alt="" height="412" src="https://web.archive.org/web/20211206080131im_/https://storage.googleapis.com/here-for-you-static/uploads/.thumbnails/h4u_selflovetree.jpeg/h4u_selflovetree-232x412.jpeg" width="232"/><img alt="" height="412" src="https://web.archive.org/web/20211206080131im_/https://storage.googleapis.com/here-for-you-static/uploads/.thumbnails/h4u_positivityevent.jpeg/h4u_positivityevent-309x412.jpeg" width="309"/></p>
+<p style="text-align: center;"><a href="https://web.archive.org/web/20211206080131/https://www.facebook.com/HereForYouCMU/">Facebook Page</a> | <a href="https://web.archive.org/web/20211206080131/https://lists.andrew.cmu.edu/mailman/listinfo/here-for-you">Mailing List</a> | <a href="https://web.archive.org/web/20211206080131/https://thebridge.cmu.edu/organization/here-for-you">Bridge</a></p>
+<p><span>Here for You is a student organization at Carnegie Mellon University founded to address student issues regarding student mental health, with a focus on improving campus culture and improving access to support resources. We seek to:</span></p>
+<ol>
+<li><span>Support those who are currently facing mental health-related issues and empower them to seek professional help and other resources that both CMU and the Pittsburgh community offer. </span></li>
+<li><span>Advocate for those struggling with mental health issues by working to alleviate the stigma associated with mental illnesses and by becoming a liaison between students and the administration on mental health-related issues.</span></li>
+<li><span>Educate the general student body to better understand what mental health disorders are thereby increasing awareness, teach how to recognize symptoms in a peer or oneself, and what resources are available on campus and in Pittsburgh.</span></li>
+</ol>
+<p><span>Founded in 2019, our membership is open to all undergraduate and graduate students at CMU.</span></p>
+<p><strong>Our Fall 2021 meetings are on Mondays from 5PM to 6PM in PHA19D.</strong></p>
+
+
+
+
+</div>
+
+<!--
+<div class="col-md-3 right">
+    
+    
+
+
+
+    
+<div class="panel panel-default user-panel">
+<div class="panel-body">
+
+
+</div>
+</div>
+
+    
+    <div class="panel panel-default">
+    <div class="panel-body">
+    
+    
+    
+
+
+
+
+
+
+    
+    
+    </div>
+    </div>
+</div>
+-->
+</div>
+</div>
+
+<footer>
+<div class="container">
+
+
+<div class="nav-footer"><ul class="list-unstyled"><li class="active" id="footer-menu--"><a href="/web/20211206080131/http://www.hereforyoucmu.com/">About</a></li></ul><ul class="list-unstyled"><li id="footer-menu-mental-health-experiences"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-experiences/">Mental Health Experiences</a></li></ul><ul class="list-unstyled"><li id="footer-menu-mental-health-resources"><a href="/web/20211206080131/http://www.hereforyoucmu.com/mental-health-resources/">Mental Health Resources</a></li></ul><ul class="list-unstyled"><li id="footer-menu-faq"><a href="/web/20211206080131/http://www.hereforyoucmu.com/faq/">FAQ</a></li></ul><ul class="list-unstyled"><li id="footer-menu-blog"><a href="/web/20211206080131/http://www.hereforyoucmu.com/blog/">News + Events</a></li></ul><ul class="list-unstyled"><li id="footer-menu-contact"><a href="/web/20211206080131/http://www.hereforyoucmu.com/contact/">Contact</a></li></ul></div>
+
+
+<div class="row">
+<p class="site-info text-center">
+    Powered by
+    <a href="https://web.archive.org/web/20211206080131/http://mezzanine.jupo.org/">Mezzanine</a>
+    and
+    <a href="https://web.archive.org/web/20211206080131/http://www.djangoproject.com/">Django</a>
+    <span class="separator">|</span>
+    Theme by <a target="_blank" href="https://web.archive.org/web/20211206080131/http://getbootstrap.com/">Bootstrap</a>
+</p>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
