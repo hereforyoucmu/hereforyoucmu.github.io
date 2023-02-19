@@ -4,6 +4,8 @@ body {
   background-color: #F9FBF2;
   font-family: "Nunito";
   font-size: 22px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 h1 {
@@ -21,8 +23,6 @@ p {
 .topnav {
   background-color: #0E1C36;
   overflow: hidden;
-  padding-left: 20%;
-  padding-right: 20%;
 }
 
 /* Style the links inside the navigation bar */
