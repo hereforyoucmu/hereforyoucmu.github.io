@@ -44,7 +44,7 @@ p {
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #F9FBF2;
-  color: #F9FBF2;
+  color: #0E1C36;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
