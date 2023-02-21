@@ -6,19 +6,21 @@ body {
   font-size: 22px;
   padding-left: 10%;
   padding-right: 10%;
-  white-space: pre-line;
 }
 
 h1 {
   color: #0E1C36;
+  white-space: pre-line;
 }
 
 h2 {
   color: #FFEDE1;
+  white-space: pre-line;
 }
 
 p {
   color: #0E1C36;
+  white-space: pre-line;
 }
 
 .topnav {
