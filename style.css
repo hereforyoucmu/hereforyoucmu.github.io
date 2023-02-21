@@ -6,6 +6,7 @@ body {
   font-size: 22px;
   padding-left: 10%;
   padding-right: 10%;
+  white-space: pre-line;
 }
 
 h1 {
