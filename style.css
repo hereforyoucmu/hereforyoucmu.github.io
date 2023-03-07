@@ -2,9 +2,6 @@
 
 body {
   background-color: #F9FBF2;
-  background-image: radial-gradient(#FFEDE1 15%, transparent 15%), radial-gradient(#D7F9FF 40%, transparent 40%);
-  background-size:60px 60px;
-  background-position: 0 0, 30px 30px;
   font-family: "Nunito";
   font-size: 22px;
   padding-left: 10%;
@@ -22,7 +19,7 @@ body {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: red;
+  background: #FFEDE1;
   border-radius: 50%;
   top: 0;
   right: 0;
