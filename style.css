@@ -11,6 +11,26 @@ body {
   padding-right: 10%;
 }
 
+.bg-shape {
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.bg-shape:after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: red;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  top: -60%; /* change value as required */
+  right: -20%; /* change value as required */
+}
+
 h1 {
   color: #0E1C36;
   white-space: pre-line;
