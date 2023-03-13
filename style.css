@@ -14,10 +14,6 @@ body {
   padding: 50px;
 }
 
-.information {
-
-}
-
 .bg-shape:after {
   content: '';
   position: absolute;
@@ -30,6 +26,10 @@ body {
   z-index: -1;
   top: -60%; /* change value as required */
   right: -20%; /* change value as required */
+}
+
+.information {
+  width: 80%
 }
 
 h1 {
