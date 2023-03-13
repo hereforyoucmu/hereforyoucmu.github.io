@@ -8,6 +8,7 @@ body {
   padding-right: 10%;
 }
 
+
 .bg-shape {
   position: relative;
   overflow: hidden;
@@ -29,7 +30,7 @@ body {
 }
 
 .information {
-  width: 60%
+  width: 60%;
   word-wrap: break-word;
 }
 
